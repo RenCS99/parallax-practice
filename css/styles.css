@@ -1,11 +1,79 @@
-body {
+body, html {
     font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+    height: 100%;
 }
 
 .jumbo-image {
-    background-position: center center;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    margin: 0 auto;
+    min-height: 100%;
+    background-size: cover;
+    background-image: url('../img/road-trip-1.jpg');
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('../img/city.jpg');  
+    /* Full height */
+    min-height: 900px;
+    position: relative;   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('img/road-trip-1.jpg');
+}
+
+.parallax-2 {
+    /* The image used */
+    background-image: url('../img/tower.jpg');  
+    /* Full height */
+    min-height: 1200px;
+    position: relative;   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-3 {
+    /* The image used */
+    background-image: url('../img/wheel.jpg'); 
+    position: relative; 
+    /* Full height */
+    min-height: 1200px;   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.caption {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+
+.border {
+    background-color: #111;
+    padding: 18px;
+    color: #ffffff;
+    font-size: 18px;
+    letter-spacing: 10px;
 
 }
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
