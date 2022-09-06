@@ -16,6 +16,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome Kit Link -->
+    <script src="https://kit.fontawesome.com/b0f17a53e4.js" crossorigin="anonymous"></script>
+
     <!-- Title of the page -->
     <title>Week 7 - Challenge 2</title>
   </head>
@@ -29,41 +32,95 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class=" text-light nav-link active" aria-current="page" href="#">Home</a>
+              <a class=" text-light nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class=" text-light nav-link" href="#">Features</a>
+              <a class=" text-light nav-link active" aria-current="page" href="#section1">Section 1</a>
             </li>
             <li class="nav-item">
-              <a class="text-light nav-link" href="#">Pricing</a>
+              <a class=" text-light nav-link" href="#section2">Section 2</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class=" text-light nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown link
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="#section3">Section 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="#section4">Section 4</a>
+            </li>
+            <li class="nav-item">
+              <a class="text-light nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <header class="jumbo-image">
-      <div class="container-fluid text-center text-light">
+    <header id="home" class="jumbo-image">
+      <div class="container-fluid text-center text-light mb-5">
         <br><br><br><br>
         <br><br><br><br>
         <br><br><br><br>
         <h1 class="display-1">This is Road Trip</h1>
-        <img src="img/road-trip.jpg" class="img-fluid fixed-top grad-1"  style="z-index: -1;" alt="Road Trip Image">
+        <img src="img/road-trip-1.jpg" class="img-fluid fixed-top grad-1"  style="z-index: -1; width: 100%" alt="Road Trip Image">
+        <br><br><br><br>
+        <br><br><br><br>
         <br><br><br><br>
       </div> 
     </header>
 
+    <main>
+      <section id="section1" class="parallax container-fluid px-5 pt-5 pb-3 text-center" style="background-image: url('img/beach.jpg')">
+        <div class="mb-5 container bg-dark bg-opacity-75 text-light text-center p-5 col-lg-8">
+          <h2>Section 1</h2>
+          <p class="mb-4">01.01.2001</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatem sapiente quasi sed ab provident at ratione beatae amet blanditiis facilis quisquam repellendus illum aperiam ex culpa pariatur tempore eaque.
+          Quis, error sit? Adipisci alias incidunt in ad, soluta amet odio tempora exercitationem vero quis eos beatae veritatis optio sint esse illum? Maxime ut ratione error enim illo. Repellat, voluptates.</p>
+          <button class="btn btn-outline-light" type="button">LEARN MORE</button>
+        </div>
+        <a href="#section2"><button class="mt-5 btn bg-dark bg-opacity-25 rounded-circle btn-outline-light border-0" type="button"><span><i class="fa-solid fa-arrow-down"></i></span></button></a>
+      </section>
 
+      <section id="section2" class="parallax container-fluid px-5 pt-5 pb-3 text-center" style="background-image: url('img/boat.jpg')">
+        <div class="mb-5 container bg-dark bg-opacity-75 text-light text-center p-5 col-lg-8">
+          <h2>Section 2</h2>
+          <p class="mb-4">02.02.2002</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatem sapiente quasi sed ab provident at ratione beatae amet blanditiis facilis quisquam repellendus illum aperiam ex culpa pariatur tempore eaque.
+          Quis, error sit? Adipisci alias incidunt in ad, soluta amet odio tempora exercitationem vero quis eos beatae veritatis optio sint esse illum? Maxime ut ratione error enim illo. Repellat, voluptates.</p>
+          <button class="btn btn-outline-light" type="button">LEARN MORE</button>
+        </div>
+        <a href="#section3"><button class="mt-5 btn bg-dark bg-opacity-25 rounded-circle btn-outline-light border-0" type="button"><span><i class="fa-solid fa-arrow-down"></i></span></button></a>
+      </section>
+
+      <section id="section3" class="parallax container-fluid px-5 pt-5 pb-3 text-center" style="background-image: url('img/city.jpg')">
+        <div class="mb-5 container bg-dark bg-opacity-75 text-light text-center p-5 col-lg-8">
+          <h2>Section 3</h2>
+          <p class="mb-4">03.03.2003</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ratione voluptate cumque eius, soluta sapiente? Cumque, animi. Dolor dignissimos sunt veritatis et at reiciendis! Hic laudantium expedita exercitationem similique corporis!
+          Doloremque illum iure accusamus perspiciatis vitae ipsam iste a impedit, veritatis voluptatem minus, nisi fuga sunt ullam neque necessitatibus dolor cum quaerat, repellat inventore! Assumenda dolores at sapiente expedita quia.
+          Alias et ipsa aut velit inventore. Repellat, illo eum quisquam excepturi quibusdam harum voluptatem deserunt exercitationem quae? Dignissimos odit vitae praesentium voluptatem, dolorem, obcaecati culpa quas, sapiente iste repellendus commodi.</p>
+          <button class="btn btn-outline-light" type="button">LEARN MORE</button>
+        </div>
+        <a href="#section4"><button class="mt-5 btn bg-dark bg-opacity-25 rounded-circle btn-outline-light border-0" type="button"><span><i class="fa-solid fa-arrow-down"></i></span></button></a>
+      </section>
+
+      <section id="section4" class="parallax container-fluid px-5 pt-5 pb-3 text-center" style="background-image: url('img/desert.jpg')">
+        <div class="mb-5 container bg-dark bg-opacity-75 text-light text-center p-5 col-lg-8">
+          <h2>Section 4</h2>
+          <p class="mb-4">04.04.2004</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, voluptatem sapiente quasi sed ab provident at ratione beatae amet blanditiis facilis quisquam repellendus illum aperiam ex culpa pariatur tempore eaque.
+          Quis, error sit? Adipisci alias incidunt in ad, soluta amet odio tempora exercitationem vero quis eos beatae veritatis optio sint esse illum? Maxime ut ratione error enim illo. Repellat, voluptates.</p>
+          <button class="btn btn-outline-light" type="button">LEARN MORE</button>
+        </div>
+        <a href="#contact"><button class="mt-5 btn bg-dark bg-opacity-25 rounded-circle btn-outline-light border-0" type="button"><span><i class="fa-solid fa-arrow-down"></i></span></button></a>
+      </section>
+    </main>
+
+    <footer class="text-light container-fluid text-center bg-danger p-5">
+      <h2 id="contact">CONTACT</h2>
+      <button class="m-2 btn btn-outline-light rounded-circle border-0 bg-light bg-opacity-25"><span><i class="fa-brands fa-twitter"></span></i></button>
+      <button class="m-2 btn btn-outline-light rounded-circle border-0 bg-light bg-opacity-25"><span><i class="fa-brands fa-facebook"></span></i></button>
+      <button class="m-2 btn btn-outline-light rounded-circle border-0 bg-light bg-opacity-25"><span><i class="fa-brands fa-instagram"></span></i></button>
+      <p class="mt-3">&copy; Untitled</p>
+    </footer>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
